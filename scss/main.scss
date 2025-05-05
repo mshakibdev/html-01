@@ -1,0 +1,55 @@
+@forward "utils";
+@forward "theme";
+@forward "layout";
+
+// Define a mixin for buttons
+@mixin button-styles($bg-color, $padding) {
+  background-color: $bg-color;
+  padding: $padding;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+}
+
+// Apply the mixin to different buttons with different parameters
+.btn-primary {
+  @include button-styles(#007bff, 10px 20px);
+}
+
+.btn-secondary {
+  @include button-styles(#6c757d, 8px 16px);
+}
+
+.btn-danger {
+  @include button-styles(#dc3545, 12px 24px);
+}
+
+
+
+// Define common button styles
+%button {
+  background-color: #8000ff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+}
+
+// Extend the common button styles
+.btn-1 {
+  @extend %button;
+}
+
+.btn-2{
+  @extend %button;
+  background-color: #c0dd15; // Overriding the background color
+}
+
+.btn-3 {
+  @extend %button;
+  background-color: #ffc107; // Overriding the background color
+}

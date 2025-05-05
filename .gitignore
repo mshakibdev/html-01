@@ -1,0 +1,23 @@
+# Node.js dependencies
+node_modules/
+
+# Dependency directories for frontend build tools (e.g., Webpack, Babel, etc.)
+dist/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE and editor files
+.idea/
+.vscode/
+
+# Log files
+*.log
+
+# SCSS temporary files
+*.scssc
+
+# Build artifacts
+*.css.map
+*.js.map

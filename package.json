@@ -1,0 +1,15 @@
+{
+  "name": "bootstrap",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build:css": "sass scss/main.scss:css/style.css",
+    "watch:css": "sass --watch scss/main.scss:css/style.css"  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

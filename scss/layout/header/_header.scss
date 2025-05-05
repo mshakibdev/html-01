@@ -1,0 +1,48 @@
+@use '../../utils/' as *;
+
+.sh-navbar {
+  position: absolute;
+  top:26px;
+  width: 100%;
+  padding:0 10px;
+
+  &-container {
+    max-width: var(--nav-container);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    background-color: var(--color-tertiary);
+    border-radius: 12px;
+  }
+  &-logo-link-container {
+    display: flex;
+    align-items: center;
+    gap:23px;
+  }
+  &-logo-container{
+   position: relative;
+  }
+  &-logo-content{
+    position:absolute;
+    top:17px;
+    left:26px;
+  }
+  &-link-container{
+    >ul {
+      list-style: none;
+      display: flex;
+      width: 515px;
+      justify-content: space-between;
+    }
+  }
+  & .submenu-container{
+    background: #c0dd15;
+  }
+  &-cta-container{
+    display: flex;
+    align-items: center;
+  }
+}
+
+
