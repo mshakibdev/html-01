@@ -49,9 +49,8 @@ svg
   position: absolute;
 }
 
-.container{
+.sh-container{
   width: min(100%, calc(var(--container-max-width) + (var(--container-padding) * 2 )));
-  //max-width: calc(var(--container-max-width) + (var(--container-padding) * 2 ) ) ;
   margin: 0 auto;
   padding: 0 var(--container-padding);
 }

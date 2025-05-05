@@ -14,7 +14,9 @@
   --color-primary: #063D30;
   --color-secondary: #FFCF4E;
   --color-tertiary: #FFFFFF;
-  --nav-container:1400px ;
+  --nav-container-max-width:1400px;
+  --container-max-width:1200px;
+  --container-padding: 10px;
 }
 
 * {
@@ -302,41 +304,43 @@ svg {
   position: absolute;
 }
 
-.container {
+.sh-container {
   width: min(100%, var(--container-max-width) + var(--container-padding) * 2);
   margin: 0 auto;
   padding: 0 var(--container-padding);
 }
 
 .sh-navbar {
+  --container-max-width: 1400px;
   position: absolute;
   top: 26px;
   width: 100%;
-  padding: 0 10px;
 }
-.sh-navbar-container {
-  max-width: var(--nav-container);
+.sh-navbar__row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
   background-color: var(--color-tertiary);
   border-radius: 12px;
 }
-.sh-navbar-logo-link-container {
+.sh-navbar__logo-nav {
   display: flex;
   align-items: center;
   gap: 23px;
 }
-.sh-navbar-logo-container {
+.sh-navbar__contact {
+  display: flex;
+  align-items: center;
+}
+.sh-navbar__logo {
   position: relative;
 }
-.sh-navbar-logo-content {
+.sh-navbar__logo-content {
   position: absolute;
   top: 17px;
   left: 26px;
 }
-.sh-navbar-link-container > ul {
+.sh-navbar__nav-links > ul {
   list-style: none;
   display: flex;
   width: 515px;
@@ -344,10 +348,6 @@ svg {
 }
 .sh-navbar .submenu-container {
   background: #c0dd15;
-}
-.sh-navbar-cta-container {
-  display: flex;
-  align-items: center;
 }
 
 .btn-primary {
