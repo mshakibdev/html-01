@@ -346,6 +346,10 @@ svg {
   width: 515px;
   justify-content: space-between;
 }
+.sh-navbar__nav-links > ul a {
+  font-size: 16px;
+  font-weight: 600;
+}
 .sh-navbar__nav-links-item {
   position: relative;
 }
@@ -363,6 +367,19 @@ svg {
   transition: 0.3s;
   visibility: hidden;
   opacity: 0;
+}
+.sh-navbar__contact-number {
+  display: flex;
+  align-items: center;
+}
+.sh-navbar__donate-button {
+  padding: 24px 32.5px;
+  margin-left: 26px;
+  background: var(--color-secondary);
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
 }
 
 .btn-primary {
