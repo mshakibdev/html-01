@@ -3,44 +3,68 @@
 .sh-navbar {
   --container-max-width: 1400px;
   position: absolute;
-  top:26px;
+  top: 26px;
   width: 100%;
 
-  &__row{
+  &__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-tertiary);
     border-radius: 12px;
   }
-  &__logo-nav{
+
+  &__logo-nav {
     display: flex;
     align-items: center;
     gap: 23px;
   }
-  &__contact{
+
+  &__contact {
     display: flex;
     align-items: center;
   }
-  &__logo{
-   position: relative;
+
+  &__logo {
+    position: relative;
   }
-  &__logo-content{
-    position:absolute;
-    top:17px;
-    left:26px;
+
+  &__logo-content {
+    position: absolute;
+    top: 17px;
+    left: 26px;
   }
-  &__nav-links{
-    >ul {
+
+  &__nav-links {
+    > ul {
       list-style: none;
       display: flex;
       width: 515px;
       justify-content: space-between;
     }
   }
-  & .submenu-container{
-    background: #c0dd15;
+
+  &__nav-links-item {
+    position: relative;
   }
+
+  &__nav-links-item:hover > &__nav-links-dropdown {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__nav-links-dropdown {
+    position: absolute;
+    list-style: none;
+    padding: 30px;
+    background: white;
+    width: 220px;
+    transform: translate(0px, 21px);
+    transition: 0.3s;
+    visibility: hidden;
+    opacity: 0;
+  }
+
 
 }
 

@@ -316,7 +316,7 @@ svg {
   top: 26px;
   width: 100%;
 }
-.sh-navbar__row {
+.sh-navbar__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -346,8 +346,23 @@ svg {
   width: 515px;
   justify-content: space-between;
 }
-.sh-navbar .submenu-container {
-  background: #c0dd15;
+.sh-navbar__nav-links-item {
+  position: relative;
+}
+.sh-navbar__nav-links-item:hover > .sh-navbar__nav-links-dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+.sh-navbar__nav-links-dropdown {
+  position: absolute;
+  list-style: none;
+  padding: 30px;
+  background: white;
+  width: 220px;
+  transform: translate(0px, 21px);
+  transition: 0.3s;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .btn-primary {
