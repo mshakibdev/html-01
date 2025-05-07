@@ -12,6 +12,7 @@
     align-items: center;
     background-color: var(--color-tertiary);
     border-radius: 12px;
+    padding-right: 5px;
   }
 
   &__logo-nav {
@@ -41,8 +42,8 @@
       display: flex;
       width: 515px;
       justify-content: space-between;
-
-      a{
+      a {
+        color: var(--color-primary);
         font-size: 16px;
         font-weight: 600;
       }
@@ -51,6 +52,11 @@
 
   &__nav-links-item {
     position: relative;
+    &:hover {
+      a {
+        color: var(--color-secondary);
+      }
+    }
   }
 
   &__nav-links-item:hover > &__nav-links-dropdown {
@@ -73,16 +79,22 @@
   &__contact-number {
     display: flex;
     align-items: center;
+
+    a {
+      margin-left: 10px;
+      font-size: 16px;
+      font-weight: 600;
+    }
   }
 
   &__donate-button {
-    padding: 24px 32.5px;
+    padding: 24px 33px;
     margin-left: 26px;
     background: var(--color-secondary);
     border-radius: 12px;
-    font-size:16px;
+    font-size: 16px;
     font-weight: 600;
-    line-height: 1;
+    line-height: .7;
   }
 
 

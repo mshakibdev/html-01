@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Federo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 :root {
   --tp-theme-color: #0057FC;
   --tp-primary-color: #0057FC;
 }
 
 :root {
-  --tp-font-heading: "Federo", sans-serif;
-  --tp-font-body: "DM Sans", sans-serif;
+  --sh-font-heading: "Fraunces";
+  --sh-font-body: "Inter";
   --tp-font-flaticon: "flaticon";
 }
 
@@ -29,7 +29,7 @@
 	typography css start
 ---------------------------------*/
 body {
-  font-family: var(--tp-font-body);
+  font-family: var(--sh-font-body), serif;
   font-size: 17px;
   font-weight: normal;
   color: var(--tp-body-color);
@@ -46,9 +46,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--tp-font-heading);
+  font-family: var(--sh-font-heading), serif;
   color: var(--tp-heading-color);
-  margin-top: 0px;
+  margin-top: 0;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -83,7 +83,7 @@ ul {
 }
 
 p {
-  font-family: var(--tp-font-body);
+  font-family: var(--sh-font-body), serif;
   font-size: 17px;
   font-weight: 400;
   color: var(--tp-body-color);
@@ -322,6 +322,7 @@ svg {
   align-items: center;
   background-color: var(--color-tertiary);
   border-radius: 12px;
+  padding-right: 5px;
 }
 .sh-navbar__logo-nav {
   display: flex;
@@ -347,11 +348,15 @@ svg {
   justify-content: space-between;
 }
 .sh-navbar__nav-links > ul a {
+  color: var(--color-primary);
   font-size: 16px;
   font-weight: 600;
 }
 .sh-navbar__nav-links-item {
   position: relative;
+}
+.sh-navbar__nav-links-item:hover a {
+  color: var(--color-secondary);
 }
 .sh-navbar__nav-links-item:hover > .sh-navbar__nav-links-dropdown {
   visibility: visible;
@@ -372,14 +377,19 @@ svg {
   display: flex;
   align-items: center;
 }
+.sh-navbar__contact-number a {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
 .sh-navbar__donate-button {
-  padding: 24px 32.5px;
+  padding: 24px 33px;
   margin-left: 26px;
   background: var(--color-secondary);
   border-radius: 12px;
   font-size: 16px;
   font-weight: 600;
-  line-height: 1;
+  line-height: 0.7;
 }
 
 .btn-primary {

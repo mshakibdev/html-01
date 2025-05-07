@@ -1,5 +1,5 @@
 @use "../utils" as *;
-
+//@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url($font-url);
 
 
@@ -13,7 +13,7 @@
 	typography css start
 ---------------------------------*/
 body {
-  font-family: var(--tp-font-body);
+  font-family: var(--sh-font-body), serif;
   font-size: 17px;
   font-weight: normal;
   color: var(--tp-body-color);
@@ -30,9 +30,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--tp-font-heading);
+  font-family: var(--sh-font-heading), serif;
   color: var(--tp-heading-color);
-  margin-top: 0px;
+  margin-top: 0;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -67,7 +67,7 @@ ul {
 }
 
 p {
-  font-family: var(--tp-font-body);
+  font-family: var(--sh-font-body), serif;
   font-size: 17px;
   font-weight: 400;
   color: var(--tp-body-color);
