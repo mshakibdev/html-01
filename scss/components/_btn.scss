@@ -1,1 +1,28 @@
 @use '../utils/' as *;
+
+@mixin button-styles($bg-color, $padding) {
+  color: var(--color-primary);
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  padding: 24px 33px;
+  background: var($bg-color);
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: .7;
+}
+
+.btn-nav{
+  @include button-styles(--color-secondary,24px 33px);
+  margin-left: 26px;
+}
+
+.btn-hero-1{
+  @include button-styles(--color-secondary,24px 33px);
+
+}
+
+.btn-hero-2{
+  @include button-styles(--color-tertiary,24px 33px);
+}

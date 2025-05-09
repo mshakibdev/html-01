@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sue+Ellen+Francisco&display=swap");
 :root {
   --tp-theme-color: #0057FC;
   --tp-primary-color: #0057FC;
@@ -6,8 +6,19 @@
 
 :root {
   --sh-font-heading: "Fraunces";
+  --sh-font-sub-heading: "Sue Ellen Francisco";
   --sh-font-body: "Inter";
   --tp-font-flaticon: "flaticon";
+}
+
+h1 {
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 0.967;
+  letter-spacing: -0.03em;
+  color: var(--color-tertiary);
+  max-width: 708px;
+  width: 100%;
 }
 
 :root {
@@ -47,34 +58,6 @@ h4,
 h5,
 h6 {
   font-family: var(--sh-font-heading), serif;
-  color: var(--tp-heading-color);
-  margin-top: 0;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-h1 {
-  font-size: 48px;
-}
-
-h2 {
-  font-size: 38px;
-}
-
-h3 {
-  font-size: 28px;
-}
-
-h4 {
-  font-size: 24px;
-}
-
-h5 {
-  font-size: 18px;
-}
-
-h6 {
-  font-size: 16px;
 }
 
 ul {
@@ -315,6 +298,7 @@ svg {
   position: absolute;
   top: 26px;
   width: 100%;
+  z-index: 5;
 }
 .sh-navbar__wrapper {
   display: flex;
@@ -378,13 +362,81 @@ svg {
   align-items: center;
 }
 .sh-navbar__contact-number a {
+  color: var(--color-primary);
   margin-left: 10px;
   font-size: 16px;
   font-weight: 600;
 }
-.sh-navbar__donate-button {
+
+.sh-hero-area {
+  background-image: url("../../../assets/img/hero-1.jpg");
+  background-repeat: no-repeat;
+  padding-top: 285px;
+  padding-bottom: 350px;
+  position: relative;
+}
+.sh-hero-area__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sh-hero-area__sub-title {
+  display: block;
+  margin-bottom: 30px;
+  font-family: var(--sh-font-sub-heading), serif;
+  font-size: 50px;
+  font-weight: 400;
+  color: var(--color-secondary);
+  line-height: 0.833;
+}
+.sh-hero-area__title {
+  margin-bottom: 60px;
+}
+.sh-hero-area__btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 336px;
+  width: 100%;
+}
+.sh-hero-area__video-wrapper {
+  padding-right: 74px;
+  padding-top: 4px;
+}
+.sh-hero-area__bottom-shape {
+  position: absolute;
+  bottom: 0;
+}
+.sh-hero-area__hand-shape {
+  position: absolute;
+  top: 27%;
+  left: 8%;
+}
+.sh-hero-area__spiral-shape {
+  position: absolute;
+  left: 6.5%;
+}
+
+.btn-nav {
+  color: var(--color-primary);
+  text-align: center;
+  cursor: pointer;
+  border: none;
   padding: 24px 33px;
+  background: var(--color-secondary);
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 0.7;
   margin-left: 26px;
+}
+
+.btn-hero-1 {
+  color: var(--color-primary);
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  padding: 24px 33px;
   background: var(--color-secondary);
   border-radius: 12px;
   font-size: 16px;
@@ -392,52 +444,17 @@ svg {
   line-height: 0.7;
 }
 
-.btn-primary {
-  background-color: #007bff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  color: white;
+.btn-hero-2 {
+  color: var(--color-primary);
   text-align: center;
   cursor: pointer;
   border: none;
-}
-
-.btn-secondary {
-  background-color: #6c757d;
-  padding: 8px 16px;
-  border-radius: 5px;
-  color: white;
-  text-align: center;
-  cursor: pointer;
-  border: none;
-}
-
-.btn-danger {
-  background-color: #dc3545;
-  padding: 12px 24px;
-  border-radius: 5px;
-  color: white;
-  text-align: center;
-  cursor: pointer;
-  border: none;
-}
-
-.btn-3, .btn-2, .btn-1 {
-  background-color: #8000ff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  color: white;
-  text-align: center;
-  cursor: pointer;
-  border: none;
-}
-
-.btn-2 {
-  background-color: #c0dd15;
-}
-
-.btn-3 {
-  background-color: #ffc107;
+  padding: 24px 33px;
+  background: var(--color-tertiary);
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 0.7;
 }
 
 /*# sourceMappingURL=style.css.map */

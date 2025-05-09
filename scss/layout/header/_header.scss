@@ -5,7 +5,7 @@
   position: absolute;
   top: 26px;
   width: 100%;
-
+  z-index: 5;
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -42,6 +42,7 @@
       display: flex;
       width: 515px;
       justify-content: space-between;
+
       a {
         color: var(--color-primary);
         font-size: 16px;
@@ -81,23 +82,12 @@
     align-items: center;
 
     a {
+      color: var(--color-primary);
       margin-left: 10px;
       font-size: 16px;
       font-weight: 600;
     }
   }
-
-  &__donate-button {
-    padding: 24px 33px;
-    margin-left: 26px;
-    background: var(--color-secondary);
-    border-radius: 12px;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: .7;
-  }
-
-
 }
 
 
