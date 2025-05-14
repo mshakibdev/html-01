@@ -20,9 +20,14 @@
 
 .btn-hero-1{
   @include button-styles(--color-secondary,24px 33px);
-
 }
 
 .btn-hero-2{
   @include button-styles(--color-tertiary,24px 33px);
+}
+
+.btn-more-about{
+  @include button-styles(--color-secondary,24px 33px);
+  margin-bottom: 60px;
+  display: inline-block;
 }

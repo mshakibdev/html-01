@@ -32,6 +32,7 @@ h1 {
   --color-violate:#B855FF;
   --color-pink:#FF73AE;
   --color-black:#121018;
+  --color-grey:#5A5860;
   --nav-container-max-width:1400px;
   --container-max-width:1200px;
   --container-padding: 10px;
@@ -68,17 +69,12 @@ h6 {
 }
 
 ul {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 p {
   font-family: var(--sh-font-body), serif;
-  font-size: 17px;
-  font-weight: 400;
-  color: var(--tp-body-color);
-  margin-bottom: 15px;
-  line-height: 28px;
 }
 
 a,
@@ -490,7 +486,7 @@ svg {
 }
 .sh-help-us__content {
   flex: 0 0 auto;
-  width: 37.9166%;
+  width: 40.5%;
   margin-left: 87px;
 }
 .sh-help-us__content span {
@@ -500,13 +496,49 @@ svg {
   font-weight: 400;
   line-height: 0.5;
 }
-.sh-help-us__content h2 {
+.sh-help-us__heading {
   font-family: var(--sh-font-heading), "serif";
   color: var(--color-black);
   font-size: 60px;
   font-weight: 700;
   line-height: 1.06;
   letter-spacing: -0.04em;
+  margin: 31px 0 36px 0;
+}
+.sh-help-us__description {
+  margin-bottom: 46px;
+}
+.sh-help-us__funding-card {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+.sh-help-us__funding-card .funding-card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-tertiary);
+  border-radius: 12px;
+  padding: 23px 16px 23px 16px;
+}
+.sh-help-us__funding-card .funding-card-wrapper .text-content-wrapper {
+  margin-left: 13px;
+}
+.sh-help-us__funding-card .funding-card-wrapper .text-content-wrapper .money-content {
+  font-family: var(--sh-font--heading), "serif";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 0.375; /* 266.667% */
+  letter-spacing: -0.06em;
+  margin-bottom: 16px;
+}
+.sh-help-us__funding-card .funding-card-wrapper .text-content-wrapper .text-content {
+  font-family: var(--sh-font-body), "serif";
+  font-size: 15px;
+  color: var(--color-grey);
+  font-weight: 400;
+  line-height: 0.625; /* 160% */
 }
 
 .btn-nav {
@@ -547,6 +579,21 @@ svg {
   font-size: 16px;
   font-weight: 600;
   line-height: 0.7;
+}
+
+.btn-more-about {
+  color: var(--color-primary);
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  padding: 24px 33px;
+  background: var(--color-secondary);
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 0.7;
+  margin-bottom: 60px;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=style.css.map */

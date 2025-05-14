@@ -1,34 +1,78 @@
-.sh-help-us{
-  &__wrapper{
+.sh-help-us {
+
+  &__wrapper {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     padding-top: 161px;
   }
 
-  &__img{
+  &__img {
     flex: 0 0 auto;
     width: 52.083%;
   }
 
-  &__content{
+  &__content {
     flex: 0 0 auto;
-    width: 37.9166%;
+    width: 40.5%;
     margin-left: 87px;
-    span{
-      font-family: var(--sh-font-sub-heading),'serif';
+
+    span {
+      font-family: var(--sh-font-sub-heading), 'serif';
       color: var(--color-pink);
       font-size: 30px;
       font-weight: 400;
       line-height: .5;
     }
-    h2{
-      font-family: var(--sh-font-heading),'serif';
-      color: var(--color-black);
-      font-size: 60px;
-      font-weight: 700;
-      line-height: 1.06;
-      letter-spacing: -.04em;
+  }
+
+  &__heading {
+    font-family: var(--sh-font-heading), 'serif';
+    color: var(--color-black);
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.06;
+    letter-spacing: -.04em;
+    margin: 31px 0 36px 0;
+  }
+
+  &__description {
+    margin-bottom: 46px;
+  }
+
+  &__funding-card {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+
+    .funding-card-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--color-tertiary);
+      border-radius: 12px;
+      padding: 23px 16px 23px 16px;
+
+      .text-content-wrapper {
+        margin-left: 13px;
+        .money-content {
+          font-family: var(--sh-font--heading), 'serif';
+          font-size: 24px;
+          font-weight: 400;
+          line-height: .375; /* 266.667% */
+          letter-spacing: -0.06em;
+          margin-bottom: 16px;
+        }
+        .text-content{
+          font-family: var(--sh-font-body),"serif";
+          font-size: 15px;
+          color:var(--color-grey);
+          font-weight: 400;
+          line-height:0.625; /* 160% */
+        }
+      }
     }
   }
+
 }
