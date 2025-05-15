@@ -26,6 +26,8 @@ h1 {
   --color-secondary: #FFCF4E;
   --color-tertiary: #FFFFFF;
   --color-page-wrapper:#F2F0EC;
+  --color-tertiary-100:#F8F3E7;
+  --color-tertiary-200:#E0DEDA;
   --color-red:#F55;
   --color-aqua:#36E0D1;
   --color-yellow:#FFD94F;
@@ -479,15 +481,68 @@ svg {
   justify-content: flex-start;
   align-items: flex-start;
   padding-top: 161px;
+  position: relative;
+}
+.sh-help-us__rotate-tree {
+  position: absolute;
+  right: -585px;
+  top: 21px;
+}
+.sh-help-us__receiving-hands {
+  position: absolute;
+  left: -21%;
+  mix-blend-mode: exclusion;
+  top: 41%;
 }
 .sh-help-us__img {
   flex: 0 0 auto;
   width: 52.083%;
+  position: relative;
+}
+.sh-help-us__img .about-text {
+  position: absolute;
+  right: -58px;
+  top: 45px;
+  transform: rotate(90deg);
+  color: var(--color-tertiary-200);
+  font-family: var(--sh-font-heading), "serif";
+  font-size: 130px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.03; /* 49.231% */
+  letter-spacing: -0.04;
+}
+.sh-help-us__img .number-stat__wrapper {
+  position: absolute;
+  right: 0;
+  bottom: 91px;
+}
+.sh-help-us__img .number-stat__wrapper .stat-content {
+  position: absolute;
+  top: 0;
+  padding-right: 59px;
+  text-align: right;
+}
+.sh-help-us__img .number-stat__wrapper .stat-content h3 {
+  font-family: var(--sh-font-heading), "serif";
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.04em;
+  color: var(--color-tertiary-100);
+}
+.sh-help-us__img .number-stat__wrapper .stat-content p {
+  font-family: var(--sh-font-heading), "serif";
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 0.833;
+  color: var(--color-tertiary-100);
 }
 .sh-help-us__content {
   flex: 0 0 auto;
   width: 40.5%;
   margin-left: 87px;
+  position: relative;
 }
 .sh-help-us__content span {
   font-family: var(--sh-font-sub-heading), "serif";
@@ -539,6 +594,13 @@ svg {
   color: var(--color-grey);
   font-weight: 400;
   line-height: 0.625; /* 160% */
+}
+.sh-help-us__funding-card .raising-hands {
+  mix-blend-mode: multiply;
+  position: absolute;
+  bottom: -47px;
+  left: -45px;
+  max-width: inherit;
 }
 
 .btn-nav {

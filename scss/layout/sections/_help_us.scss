@@ -5,17 +5,81 @@
     justify-content: flex-start;
     align-items: flex-start;
     padding-top: 161px;
+    position: relative;
+  }
+
+  &__rotate-tree {
+    position: absolute;
+    right: -585px;
+    top: 21px;
+  }
+
+  &__receiving-hands {
+    position: absolute;
+    left: -21%;
+    mix-blend-mode: exclusion;
+    top: 41%;
+
   }
 
   &__img {
     flex: 0 0 auto;
     width: 52.083%;
+    position: relative;
+
+    .about-text {
+      position: absolute;
+      right: -58px;
+      top: 45px;
+      transform: rotate(90deg);
+      color: var(--color-tertiary-200);
+      font-family: var(--sh-font-heading), 'serif';
+      font-size: 130px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 2.03; /* 49.231% */
+      letter-spacing: -0.04;
+    }
+
+    .number-stat {
+      &__wrapper {
+        position: absolute;
+        right: 0;
+        bottom: 91px;
+
+        .stat-content {
+          position: absolute;
+          top: 0;
+          padding-right: 59px;
+          text-align: right;
+
+          h3 {
+            font-family: var(--sh-font-heading), 'serif';
+            font-size: 90px;
+            font-weight: 700;
+            line-height: 1.4;
+            letter-spacing: -0.04em;
+            color: var(--color-tertiary-100);
+          }
+
+          p {
+            font-family: var(--sh-font-heading), 'serif';
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 0.833;
+            color: var(--color-tertiary-100);
+          }
+        }
+      }
+
+    }
   }
 
   &__content {
     flex: 0 0 auto;
     width: 40.5%;
     margin-left: 87px;
+    position: relative;
 
     span {
       font-family: var(--sh-font-sub-heading), 'serif';
@@ -56,6 +120,7 @@
 
       .text-content-wrapper {
         margin-left: 13px;
+
         .money-content {
           font-family: var(--sh-font--heading), 'serif';
           font-size: 24px;
@@ -64,14 +129,23 @@
           letter-spacing: -0.06em;
           margin-bottom: 16px;
         }
-        .text-content{
-          font-family: var(--sh-font-body),"serif";
+
+        .text-content {
+          font-family: var(--sh-font-body), "serif";
           font-size: 15px;
-          color:var(--color-grey);
+          color: var(--color-grey);
           font-weight: 400;
-          line-height:0.625; /* 160% */
+          line-height: 0.625; /* 160% */
         }
       }
+    }
+
+    .raising-hands {
+      mix-blend-mode: multiply;
+      position: absolute;
+      bottom: -47px;
+      left: -45px;
+      max-width: inherit;
     }
   }
 
