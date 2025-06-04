@@ -21,6 +21,23 @@ h1 {
   width: 100%;
 }
 
+h2 {
+  font-family: var(--sh-font-heading), "serif";
+  color: var(--color-black);
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.06;
+  letter-spacing: -0.04em;
+}
+
+span {
+  color: var(--color-pink);
+  font-family: var(--sh-font-sub-heading), "serif";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 0.5;
+}
+
 :root {
   --color-primary: #063D30;
   --color-secondary: #FFCF4E;
@@ -302,6 +319,12 @@ svg {
   background-color: var(--color-page-wrapper);
 }
 
+.sh-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .sh-navbar {
   --container-max-width: 1400px;
   position: absolute;
@@ -482,17 +505,18 @@ svg {
   align-items: flex-start;
   padding-top: 161px;
   position: relative;
+  overflow-x: hidden;
 }
 .sh-help-us__rotate-tree {
   position: absolute;
-  right: -585px;
-  top: 21px;
+  right: -237px;
+  top: 31px;
 }
 .sh-help-us__receiving-hands {
   position: absolute;
-  left: -21%;
   mix-blend-mode: exclusion;
   top: 41%;
+  left: 10%;
 }
 .sh-help-us__img {
   flex: 0 0 auto;
@@ -544,20 +568,7 @@ svg {
   margin-left: 87px;
   position: relative;
 }
-.sh-help-us__content span {
-  font-family: var(--sh-font-sub-heading), "serif";
-  color: var(--color-pink);
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 0.5;
-}
-.sh-help-us__heading {
-  font-family: var(--sh-font-heading), "serif";
-  color: var(--color-black);
-  font-size: 60px;
-  font-weight: 700;
-  line-height: 1.06;
-  letter-spacing: -0.04em;
+.sh-help-us__content h2 {
   margin: 31px 0 36px 0;
 }
 .sh-help-us__description {
@@ -603,6 +614,23 @@ svg {
   max-width: inherit;
 }
 
+.sh-positive-impact__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 268px;
+}
+.sh-positive-impact__wrapper .care-text {
+  font-family: var(--sh-font-heading), "serif";
+  font-size: 280px;
+  font-weight: 600;
+  line-height: 0.2286;
+  letter-spacing: -0.04em;
+  background: linear-gradient(179deg, #E0DEDA 39.13%, #F2F0EC 104.12%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .btn-nav {
   color: var(--color-primary);
   text-align: center;

@@ -57,3 +57,9 @@ svg
 .sh-page-wrapper{
   background-color: var(--color-page-wrapper);
 }
+
+.sh-content-wrapper{
+  display: flex;
+  justify-content:  space-between;
+  align-items: center;
+}

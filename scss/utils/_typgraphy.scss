@@ -1,18 +1,35 @@
-$font-url : 'https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sue+Ellen+Francisco&display=swap';
+$font-url: 'https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sue+Ellen+Francisco&display=swap';
 
 :root {
-    --sh-font-heading:  "Fraunces";
-    --sh-font-sub-heading:  "Sue Ellen Francisco";
-    --sh-font-body: "Inter";
-    --tp-font-flaticon: "flaticon";
+  --sh-font-heading: "Fraunces";
+  --sh-font-sub-heading: "Sue Ellen Francisco";
+  --sh-font-body: "Inter";
+  --tp-font-flaticon: "flaticon";
 }
 
-h1{
-    font-size: 120px;
-    font-weight: 700;
-    line-height: 0.967;
-    letter-spacing: -0.030em;
-    color: var(--color-tertiary);
-    max-width: 708px;
-    width: 100%;
+h1 {
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 0.967;
+  letter-spacing: -0.030em;
+  color: var(--color-tertiary);
+  max-width: 708px;
+  width: 100%;
+}
+
+h2 {
+  font-family: var(--sh-font-heading), 'serif';
+  color: var(--color-black);
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.06;
+  letter-spacing: -.04em;
+}
+
+span{
+    color: var(--color-pink);
+    font-family: var(--sh-font-sub-heading), 'serif';
+    font-size: 30px;
+    font-weight: 400;
+    line-height: .5;
 }
